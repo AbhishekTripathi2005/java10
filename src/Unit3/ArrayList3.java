@@ -1,0 +1,30 @@
+package Unit3;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ArrayList3 {
+    public static void main(String[] args) {
+        ArrayList<String> products = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the no. of products: ");
+        int n = input.nextInt();
+        for (int i = 0; i < n; i++) {
+            products.add(input.next());
+        }
+        Iterator itr = products.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+        products.addLast("Lichi");
+        products.addLast("Orange");
+        products.add(3,"Papaya");
+        Collections.sort(products);
+        System.out.println(products);
+        System.out.println(products.getFirst());
+        System.out.println(products.getLast());
+
+    }
+}
