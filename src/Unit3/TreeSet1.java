@@ -13,6 +13,7 @@ public class TreeSet1 {
         for (int i = 0; i < n; i++) {
             ts.add(sc.nextInt());
         }
-        System.out.println(ts.subSet(2,5));
+        System.out.println(ts);
+        System.out.println(ts.subSet(2,7));
     }
 }
